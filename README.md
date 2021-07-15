@@ -13,6 +13,14 @@
  * #### 1. **film** tablosunda bulunan tüm sütunlardaki verileri replacement cost değeri 12.99 dan büyük eşit ve 16.99 küçük olma koşuluyla sıralayınız ( BETWEEN - AND yapısını kullanınız.) <a href='#2_1'>(git)</a>
  * #### 2. **actor** tablosunda bulunan first_name ve last_name sütunlardaki verileri first_name 'Penelope' veya 'Nick' veya 'Ed' değerleri olması <a href='#2_2'>(git)</a>
  * #### 3. **film** tablosunda bulunan tüm sütunlardaki verileri rental_rate 0.99, 2.99, 4.99 **VE** replacement_cost 12.99, 15.99, 28.99 olma koşullarıyla sıralayınız. (IN operatörünü kullanınız.) <a href='#2_3'>(git)</a>
+
+
+<a href='#O3'>Ödev 3:</a> Aşşağıdaki sorgu senaryolarını **dvdrental** örnek veritabanı üzerinden gerçekleştiriniz
+ * #### 1. **country** tablosunda bulunan **country** sütunundaki ülke isimlerinden 'A' karakteri ile başlayıp 'a' karakteri ile sonlananları sıralayınız. <a href='#3_1'>(git)</a>
+ * #### 2. **country** tablosunda bulunan **country** sütunundaki ülke isimlerinden en az 6 karakterden oluşan ve sonu 'n' karakteri ile sonlananları sıralayınız <a href='#3_2'>(git)</a>
+ * #### 3. **film** tablosunda bulunan **title** sütunundaki film isimlerinden en az 4 adet büyük ya da küçük harf farketmesizin 'T' karakteri içeren film isimlerini sıralayınız<a href='#3_3'>(git)</a>
+ * #### 4. **film** tablosunda bulunan tüm sütunlardaki verilerden **title** 'C' karakteri ile başlayan ve uzunluğu (length) 90 dan büyük olan ve rental_rate 2.99 olan verileri sıralayınız. <a href='#3_4'>(git)</a>
+ 
  
  
 
@@ -58,4 +66,28 @@ SELECT first_name, last_name FROM actor WHERE first_name IN ('Penelope', 'Nick',
 #### <p id = '2_3' > 3. **film** tablosunda bulunan tüm sütunlardaki verileri rental_rate 0.99, 2.99, 4.99 **VE** replacement_cost 12.99, 15.99, 28.99 olma koşullarıyla sıralayınız. (IN operatörünü kullanınız.)</p>
 ```sql
 SELECT * FROM film WHERE rental_rate IN (0.99, 2.99, 4.99) AND replacement_cost IN (12.99, 15.99, 28.99)
+```
+
+
+
+
+
+## <p id = 'O3' > **Ödev 3** </p>
+#### <p id = '3_1' > 1. **country** tablosunda bulunan **country** sütunundaki ülke isimlerinden 'A' karakteri ile başlayıp 'a' karakteri ile sonlananları sıralayınız.</p>
+```sql
+SELECT country FROM country WHERE country LIKE 'A%' AND country LIKE '%a';
+```
+#### <p id = '3_2' > 2. **country** tablosunda bulunan **country** sütunundaki ülke isimlerinden en az 6 karakterden oluşan ve sonu 'n' karakteri ile sonlananları sıralayınız.</p>
+```sql
+SELECT country FROM country WHERE country LIKE '______' AND country LIKE '%n'
+```
+
+#### <p id = '3_3' > 3. **film** tablosunda bulunan **title** sütunundaki film isimlerinden en az 4 adet büyük ya da küçük harf farketmesizin 'T' karakteri içeren film isimlerini sıralayınız</p>
+```sql
+SELECT title FROM film WHERE title ILIKE '%T%T%T%T%'
+```
+
+#### <p id = '3_4' > 4. **film** tablosunda bulunan tüm sütunlardaki verilerden **title** 'C' karakteri ile başlayan ve uzunluğu (length) 90 dan büyük olan ve rental_rate 2.99 olan verileri sıralayınız.</p>
+```sql
+SELECT * FROM film WHERE title LIKE 'C%' AND length > 90 and rental_rate = 2.99
 ```
