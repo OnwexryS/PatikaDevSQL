@@ -38,7 +38,14 @@
  * #### 2. **film** tablosunda bulunan filmlerden kaçtanesi 'C' karekteri ile başlar? <a href='#6_2'>(git)</a>
  * #### 3. **film** tablosunda bulunan filmlerden rental_rate değeri 0.99 a eşit olan en uzun (length) film kaç dakikadır? <a href='#6_3'>(git)</a>
  * #### 4. **film** tablosunda bulunan filmlerin uzunluğu 150 dakikadan büyük olanlarına ait kaç farklı replacement_cost değeri vardır? <a href='#6_4'>(git)</a>
+
+<a href='#O7'>Ödev 7:</a> Aşşağıdaki sorgu senaryolarını **dvdrental** örnek veritabanı üzerinden gerçekleştiriniz
+ * #### 1. **film** tablosunda bulunan filmleri rating değerlerine göre gruplayınız. <a href='#7_1'>(git)</a>
+ * #### 2. **film** tablosunda bulunan filmleri **replacement_cost** sütununa göre grupladığımızda film sayısı 50 den fazla olan replacement_cost değerini ve karşılık gelen film sayısını sıralayınız. <a href='#7_2'>(git)</a>
+ * #### 3. **film** tablosunda bulunan filmlerden rental_rate değeri 0.99 a eşit olan en uzun (length) film kaç dakikadır? <a href='#7_3'>(git)</a>
+ * #### 4. **city** tablosunda bulunan şehir verilerini **country_id** sütununa göre gruplandırdıktan sonra en fazla şehir sayısı barındıra country_id bilgisini ve şehir sayısını paylaşınız. <a href='#7_4'>(git)</a>
   
+
 
 
 ## <p id = 'O1' > **Ödev 1** </p> 
@@ -170,7 +177,7 @@ LIMIT 4;
 ```sql
 SELECT ROUND(AVG(rental_rate), 2) FROM film;
 ```
-#### <p id = '6_2' > 2. **film** tablosunda bulunan filmlerden kaçtanesi 'C' karekteri ile başlar??</p>
+#### <p id = '6_2' > 2. **film** tablosunda bulunan filmlerden kaçtanesi 'C' karekteri ile başlar?</p>
 ```sql
 SELECT COUNT(title) FROM film
 WHERE title LIKE 'C%';
@@ -186,4 +193,34 @@ WHERE rental_rate = 0.99;
 ```sql
 SELECT COUNT(DISTINCT replacement_cost) FROM film
 WHERE length > 150;
+```
+
+
+
+
+## <p id = 'O7' > **Ödev 7** </p>
+#### <p id = '7_1' > 1. **film** tablosunda bulunan filmleri **rating** değerlerine göre gruplayınız.</p>
+```sql
+SELECT rating, COUNT(*) FROM film
+GROUP BY rating;
+```
+#### <p id = '7_2' > 2. **film** tablosunda bulunan filmleri **replacement_cost** sütununa göre grupladığımızda film sayısı 50 den fazla olan replacement_cost değerini ve karşılık gelen film sayısını sıralayınız.</p>
+```sql
+SELECT replacement_cost, COUNT(*) FROM film
+GROUP BY replacement_cost
+HAVING COUNT(*) > 50;
+```
+
+#### <p id = '7_3' > 3. **customer** tablosunda bulunan store_id değerlerine karşılık gelen müşteri sayılarını nelerdir?</p>
+```sql
+SELECT store_id, COUNT(*) FROM customer
+GROUP BY store_id;
+```
+
+#### <p id = '7_4' > 4. **city** tablosunda bulunan şehir verilerini **country_id** sütununa göre gruplandırdıktan sonra en fazla şehir sayısı barındıra country_id bilgisini ve şehir sayısını paylaşınız.</p>
+```sql
+SELECT country_id, COUNT(*) FROM city
+GROUP BY country_id
+ORDER BY COUNT(*) DESC
+LIMIT 1;
 ```
