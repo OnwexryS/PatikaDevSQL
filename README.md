@@ -21,7 +21,12 @@
  * #### 3. **film** tablosunda bulunan **title** sütunundaki film isimlerinden en az 4 adet büyük ya da küçük harf farketmesizin 'T' karakteri içeren film isimlerini sıralayınız<a href='#3_3'>(git)</a>
  * #### 4. **film** tablosunda bulunan tüm sütunlardaki verilerden **title** 'C' karakteri ile başlayan ve uzunluğu (length) 90 dan büyük olan ve rental_rate 2.99 olan verileri sıralayınız. <a href='#3_4'>(git)</a>
  
- 
+<a href='#O4'>Ödev 4:</a> Aşşağıdaki sorgu senaryolarını **dvdrental** örnek veritabanı üzerinden gerçekleştiriniz
+ * #### 1. **film** tablosunda bulunan **replacement_cost** sütununda bulunan birbirinden farklı değerleri sıralayınız. <a href='#4_1'>(git)</a>
+ * #### 2. **film** tablosunda bulunan **replacement_cost** sütununda birbirinden farklı kaç tane veri vardır? <a href='#4_2'>(git)</a>
+ * #### 3. **film** tablosunda bulunan film isimlerinde (title) kaç tanesini T karakteri ile başlar ve aynı zamanda rating 'G' ye eşittir? <a href='#4_3'>(git)</a>
+ * #### 4. **film** tablosunda bulunan ülke isimlerinden (country) kaç tanesi 5 karakterden oluşmaktadır? <a href='#4_4'>(git)</a>
+ * #### 5. **city** tablosundaki şehir isimlerinin kaçtanesi 'R' veya r karakteri ile biter?? <a href='#4_5'>(git)</a>
  
 
 
@@ -90,4 +95,32 @@ SELECT title FROM film WHERE title ILIKE '%T%T%T%T%'
 #### <p id = '3_4' > 4. **film** tablosunda bulunan tüm sütunlardaki verilerden **title** 'C' karakteri ile başlayan ve uzunluğu (length) 90 dan büyük olan ve rental_rate 2.99 olan verileri sıralayınız.</p>
 ```sql
 SELECT * FROM film WHERE title LIKE 'C%' AND length > 90 and rental_rate = 2.99
+```
+
+
+
+
+## <p id = 'O4' > **Ödev 4** </p>
+#### <p id = '4_1' > 1. **film** tablosunda bulunan **replacement_cost** sütununda bulunan birbirinden farklı değerleri sıralayınız.</p>
+```sql
+SELECT DISTINCT replacement_cost FROM film;
+```
+#### <p id = '4_2' > 2. **film** tablosunda bulunan **replacement_cost** sütununda birbirinden farklı kaç tane veri vardır?</p>
+```sql
+SELECT COUNT(DISTINCT replacement_cost) FROM film;
+```
+
+#### <p id = '4_3' > 3. **film** tablosunda bulunan film isimlerinde (title) kaç tanesini T karakteri ile başlar ve aynı zamanda rating 'G' ye eşittir?</p>
+```sql
+SELECT COUNT(*) FROM film WHERE title LIKE 'T%' AND rating = 'G';
+```
+
+#### <p id = '4_4' > 4. **country** tablosunda bulunan ülke isimlerinden (country) kaç tanesi 5 karakterden oluşmaktadır?</p>
+```sql
+SELECT COUNT(*) FROM country WHERE country LIKE '_____';
+```
+
+#### <p id = '4_5' > 4. **city** tablosundaki şehir isimlerinin kaçtanesi 'R' veya r karakteri ile biter?</p>
+```sql
+SELECT COUNT(*) FROM country WHERE country ILIKE '%r';
 ```
