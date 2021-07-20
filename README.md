@@ -32,7 +32,13 @@
  * #### 1. **film** tablosunda bulunan ve film ismi (title) 'n' karakteri ile biten en uzun (length) 5 filmi sıralayınız. <a href='#5_1'>(git)</a>
  * #### 2. **film** tablosunda bulunan ve film ismi (title) 'n' karakteri ile biten en kısa (length) ikinci 5 filmi sıralayınız. <a href='#5_2'>(git)</a>
  * #### 3. **customer** tablosunda bulunan last_name sütununa göre azalan yapılan sıralamada store_id 1 olmak koşuluyla ilk 4 veriyi sıralayınız. <a href='#5_3'>(git)</a>
-
+ 
+<a href='#O6'>Ödev 6:</a> Aşşağıdaki sorgu senaryolarını **dvdrental** örnek veritabanı üzerinden gerçekleştiriniz
+ * #### 1. **film** tablosunda bulunan **rental_rate** sütunundaki değerlerin ortalaması nedir? <a href='#6_1'>(git)</a>
+ * #### 2. **film** tablosunda bulunan filmlerden kaçtanesi 'C' karekteri ile başlar? <a href='#6_2'>(git)</a>
+ * #### 3. **film** tablosunda bulunan filmlerden rental_rate değeri 0.99 a eşit olan en uzun (length) film kaç dakikadır? <a href='#6_3'>(git)</a>
+ * #### 4. **film** tablosunda bulunan filmlerin uzunluğu 150 dakikadan büyük olanlarına ait kaç farklı replacement_cost değeri vardır? <a href='#6_4'>(git)</a>
+  
 
 
 ## <p id = 'O1' > **Ödev 1** </p> 
@@ -154,5 +160,30 @@ SELECT * FROM customer
 WHERE store_id = 1
 ORDER BY last_name DESC
 LIMIT 4;
+```
 
+
+
+
+## <p id = 'O6' > **Ödev 4** </p>
+#### <p id = '6_1' > 1. **film** tablosunda bulunan **rental_rate** sütunundaki değerlerin ortalaması nedir?</p>
+```sql
+SELECT ROUND(AVG(rental_rate), 2) FROM film;
+```
+#### <p id = '6_2' > 2. **film** tablosunda bulunan filmlerden kaçtanesi 'C' karekteri ile başlar??</p>
+```sql
+SELECT COUNT(title) FROM film
+WHERE title LIKE 'C%';
+```
+
+#### <p id = '6_3' > 3. **film** tablosunda bulunan filmlerden rental_rate değeri 0.99 a eşit olan en uzun (length) film kaç dakikadır?</p>
+```sql
+SELECT MAX(length) FROM film
+WHERE rental_rate = 0.99;
+```
+
+#### <p id = '6_4' > 4. **film** tablosunda bulunan filmlerin uzunluğu 150 dakikadan büyük olanlarına ait kaç farklı replacement_cost değeri vardır?</p>
+```sql
+SELECT COUNT(DISTINCT replacement_cost) FROM film
+WHERE length > 150;
 ```
