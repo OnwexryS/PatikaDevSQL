@@ -165,7 +165,7 @@ LIMIT 4;
 
 
 
-## <p id = 'O6' > **Ödev 4** </p>
+## <p id = 'O6' > **Ödev 6** </p>
 #### <p id = '6_1' > 1. **film** tablosunda bulunan **rental_rate** sütunundaki değerlerin ortalaması nedir?</p>
 ```sql
 SELECT ROUND(AVG(rental_rate), 2) FROM film;
