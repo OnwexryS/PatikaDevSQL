@@ -1,7 +1,7 @@
 # PatikaDev-PostgreSQL
 
 ## Tıklayarak Ödevlere Gidebilirsin
-[Ödev 1:](../main/Odevler/Odev1/odev.md "Tıklayarak ödevi açabilirsin ") Aşşağıdaki sorgu senaryolarını **dvdrental** örnek veritabanı üzerinden gerçekleştiriniz
+[Ödev 1:](Odevler/Odev1/odev.md "Tıklayarak ödevi açabilirsin ") Aşşağıdaki sorgu senaryolarını **dvdrental** örnek veritabanı üzerinden gerçekleştiriniz
 * #### 1. **film** tablosunda bulunan **title** ve **description** sütunlarındaki verileri sıralayınız. [(git)](../main/Odevler/Odev1/1.sql "Tıklayarak 1. ödevi açabilirsin ")
 * #### 2. **film** tablosunda bulunan tüm sütunlardaki verileri film uzunluğu (length) 60 dan büyük **VE** 75 ten küçük olma koşullarıyla sıralayınız. [(git)](../main/Odevler/Odev1/2.sql "Tıklayarak 2. ödevi açabilirsin ")
 * #### 3. **film** tablosunda bulunan tüm sütunlardaki verileri rental_rate 0.99 **VE** replacement_cost 12.99 **VEYA** 28.99 olma koşullarıyla sıralayınız. [(git)](../main/Odevler/Odev1/3.sql "Tıklayarak 3. ödevi açabilirsin ")
