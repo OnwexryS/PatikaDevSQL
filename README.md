@@ -27,7 +27,11 @@
  * #### 3. **film** tablosunda bulunan film isimlerinde (title) kaç tanesini T karakteri ile başlar ve aynı zamanda rating 'G' ye eşittir? <a href='#4_3'>(git)</a>
  * #### 4. **film** tablosunda bulunan ülke isimlerinden (country) kaç tanesi 5 karakterden oluşmaktadır? <a href='#4_4'>(git)</a>
  * #### 5. **city** tablosundaki şehir isimlerinin kaçtanesi 'R' veya r karakteri ile biter?? <a href='#4_5'>(git)</a>
- 
+  
+<a href='#O5'>Ödev 5:</a> Aşşağıdaki sorgu senaryolarını **dvdrental** örnek veritabanı üzerinden gerçekleştiriniz
+ * #### 1. **film** tablosunda bulunan ve film ismi (title) 'n' karakteri ile biten en uzun (length) 5 filmi sıralayınız. <a href='#5_1'>(git)</a>
+ * #### 2. **film** tablosunda bulunan ve film ismi (title) 'n' karakteri ile biten en kısa (length) ikinci 5 filmi sıralayınız. <a href='#5_2'>(git)</a>
+ * #### 3. **customer** tablosunda bulunan last_name sütununa göre azalan yapılan sıralamada store_id 1 olmak koşuluyla ilk 4 veriyi sıralayınız. <a href='#5_3'>(git)</a>
 
 
 
@@ -123,4 +127,32 @@ SELECT COUNT(*) FROM country WHERE country LIKE '_____';
 #### <p id = '4_5' > 4. **city** tablosundaki şehir isimlerinin kaçtanesi 'R' veya r karakteri ile biter?</p>
 ```sql
 SELECT COUNT(*) FROM country WHERE country ILIKE '%r';
+```
+
+
+
+
+## <p id = 'O5' > **Ödev 5** </p>
+#### <p id = '5_1' > 1. **film** tablosunda bulunan ve film ismi (title) 'n' karakteri ile biten en uzun (length) 5 filmi sıralayınız.</p>
+```sql
+SELECT * FROM film
+WHERE title LIKE '%n'
+ORDER BY length DESC;
+```
+#### <p id = '5_2' > 2. **film** tablosunda bulunan ve film ismi (title) 'n' karakteri ile biten en kısa (length) ikinci 5 filmi sıralayınız.</p>
+```sql
+SELECT * FROM film
+WHERE title LIKE '%n'
+ORDER BY length ASC
+OFFSET 2
+LIMIT 5;
+```
+
+#### <p id = '5_3' > 3. **customer** tablosunda bulunan last_name sütununa göre azalan yapılan sıralamada store_id 1 olmak koşuluyla ilk 4 veriyi sıralayınız.</p>
+```sql
+SELECT * FROM customer
+WHERE store_id = 1
+ORDER BY last_name DESC
+LIMIT 4;
+
 ```
