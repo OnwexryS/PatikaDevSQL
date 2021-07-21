@@ -6,4 +6,4 @@
 
 
 
-### [**Ana Sayfa**](../blob/main/README.md "Tıklayarak gidebilirsin")
+### [**Ana Sayfa**](https://github.com/OnwexryS/PatikaDevSQL/blob/main/README.md "Tıklayarak gidebilirsin")
