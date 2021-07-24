@@ -65,5 +65,9 @@
 [Ödev 9:](Odevler/Odev9/odev.md "Tıklayarak ödevi açabilirsin ") Aşşağıdaki sorgu senaryolarını **dvdrental** örnek veritabanı üzerinden gerçekleştiriniz
  * #### 1. **city** tablosu ile country tablosunda bulunan şehir (city) ve ülke (country) isimlerini birlikte görebileceğimiz INNER JOIN sorgusunu yazınız. [(çözüme git)](Odevler/Odev9/1.sql "Tıklayarak 1. ödevi açabilirsin ")
  * #### 2. **customer** tablosu ile **payment** tablosunda bulunan payment_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz INNER JOIN sorgusunu yazınız. [(çözüme git)](Odevler/Odev9/2.sql "Tıklayarak 2. ödevi açabilirsin ")
- * #### 3. **customer** tablosu ile **rental** tablosunda bulunan rental_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz
-INNER JOIN sorgusunu yazınız. [(çözüme git)](Odevler/Odev9/3.sql "Tıklayarak 3. ödevi açabilirsin ")
+ * #### 3. **customer** tablosu ile **rental** tablosunda bulunan rental_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz INNER JOIN sorgusunu yazınız. [(çözüme git)](Odevler/Odev9/3.sql "Tıklayarak 3. ödevi açabilirsin ")
+
+[Ödev 10:](Odevler/Odev10/odev.md "Tıklayarak ödevi açabilirsin ") Aşşağıdaki sorgu senaryolarını **dvdrental** örnek veritabanı üzerinden gerçekleştiriniz
+ * #### 1. **city** tablosu ile **country** tablosunda bulunan şehir (city) ve ülke (country) isimlerini birlikte görebileceğimiz LEFT JOIN sorgusunu yazınız. [(çözüme git)](Odevler/Odev10/1.sql "Tıklayarak 1. ödevi açabilirsin ")
+ * #### 2. **customer** tablosu ile **payment** tablosunda bulunan payment_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz RIGHT JOIN sorgusunu yazınız. [(çözüme git)](Odevler/Odev10/2.sql "Tıklayarak 2. ödevi açabilirsin ")
+ * #### 3. **customer** tablosu ile **rental** tablosunda bulunan rental_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz FULL JOIN sorgusunu yazınız. [(çözüme git)](Odevler/Odev10/3.sql "Tıklayarak 3. ödevi açabilirsin ")
