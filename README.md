@@ -59,3 +59,11 @@
 
  * #### 3. Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım. [(çözüme git)](Odevler/Odev8/3.sql "Tıklayarak 3. ödevi açabilirsin ")
  * #### 4. Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım. [(çözüme git)](Odevler/Odev8/4.sql "Tıklayarak 4. ödevi açabilirsin ")
+
+
+
+[Ödev 9:](Odevler/Odev9/odev.md "Tıklayarak ödevi açabilirsin ") Aşşağıdaki sorgu senaryolarını **dvdrental** örnek veritabanı üzerinden gerçekleştiriniz
+ * #### 1. **city** tablosu ile country tablosunda bulunan şehir (city) ve ülke (country) isimlerini birlikte görebileceğimiz INNER JOIN sorgusunu yazınız. [(çözüme git)](Odevler/Odev9/1.sql "Tıklayarak 1. ödevi açabilirsin ")
+ * #### 2. **customer** tablosu ile **payment** tablosunda bulunan payment_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz INNER JOIN sorgusunu yazınız. [(çözüme git)](Odevler/Odev9/2.sql "Tıklayarak 2. ödevi açabilirsin ")
+ * #### 3. **customer** tablosu ile **rental** tablosunda bulunan rental_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz
+INNER JOIN sorgusunu yazınız. [(çözüme git)](Odevler/Odev9/3.sql "Tıklayarak 3. ödevi açabilirsin ")
