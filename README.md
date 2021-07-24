@@ -44,3 +44,18 @@
  * #### 2. **film** tablosunda bulunan filmleri **replacement_cost** sütununa göre grupladığımızda film sayısı 50 den fazla olan replacement_cost değerini ve karşılık gelen film sayısını sıralayınız. [(çözüme git)](Odevler/Odev7/2.sql "Tıklayarak 2. ödevi açabilirsin ")
  * #### 3. **film** tablosunda bulunan filmlerden rental_rate değeri 0.99 a eşit olan en uzun (length) film kaç dakikadır? [(çözüme git)](Odevler/Odev7/3.sql "Tıklayarak 3. ödevi açabilirsin ")
  * #### 4. **city** tablosunda bulunan şehir verilerini **country_id** sütununa göre gruplandırdıktan sonra en fazla şehir sayısı barındıra country_id bilgisini ve şehir sayısını paylaşınız. [(çözüme git)](Odevler/Odev7/4.sql "Tıklayarak 4. ödevi açabilirsin ")
+
+ 
+[Ödev 8:](Odevler/Odev8/odev.md "Tıklayarak ödevi açabilirsin ")
+ * #### 1. **test** veritabanınızda employee isimli sütun bilgileri id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.
+ * #### 2. Oluşturduğumuz **employee** tablosuna 'Mockaroo' servisini kullanarak 50 adet veri ekleyelim.
+ *1, 2. sorunun çözümleri için...*
+
+ [*DATABASE oluşturma batch scripti*](Odevler/Odev8/build.bat "Tıklayarak açabilirsin ")
+
+ [*Script üzerinden çalıştırılan database oluşturma(CREATE TABLE) queryleri*](Odevler/Odev8/createdb.sql "Tıklayarak açabilirsin ")
+
+ [*Script üzerinden çalıştırılan veri yükleme(INSERT INTO) queryleri*](Odevler/Odev8/datas.sql "Tıklayarak açabilirsin ")
+
+ * #### 3. Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım. [(çözüme git)](Odevler/Odev8/3.sql "Tıklayarak 3. ödevi açabilirsin ")
+ * #### 4. Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım. [(çözüme git)](Odevler/Odev8/4.sql "Tıklayarak 4. ödevi açabilirsin ")
