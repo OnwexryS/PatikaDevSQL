@@ -71,3 +71,9 @@
  * #### 1. **city** tablosu ile **country** tablosunda bulunan şehir (city) ve ülke (country) isimlerini birlikte görebileceğimiz LEFT JOIN sorgusunu yazınız. [(çözüme git)](Odevler/Odev10/1.sql "Tıklayarak 1. ödevi açabilirsin ")
  * #### 2. **customer** tablosu ile **payment** tablosunda bulunan payment_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz RIGHT JOIN sorgusunu yazınız. [(çözüme git)](Odevler/Odev10/2.sql "Tıklayarak 2. ödevi açabilirsin ")
  * #### 3. **customer** tablosu ile **rental** tablosunda bulunan rental_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz FULL JOIN sorgusunu yazınız. [(çözüme git)](Odevler/Odev10/3.sql "Tıklayarak 3. ödevi açabilirsin ")
+
+[Ödev 11:](Odevler/Odev11/odev.md "Tıklayarak ödevi açabilirsin ") Aşşağıdaki sorgu senaryolarını **dvdrental** örnek veritabanı üzerinden gerçekleştiriniz
+ * #### 1. **actor** ve **customer** tablolarında bulunan **first_name** sütunları için tüm verileri sıralayalım. [(çözüme git)](Odevler/Odev11/1.sql "Tıklayarak 1. ödevi açabilirsin ")
+ * #### 2. **actor** ve **customer** tablolarında bulunan **first_name** sütunları için kesişen verileri sıralayalım. [(çözüme git)](Odevler/Odev11/2.sql "Tıklayarak 2. ödevi açabilirsin ")
+ * #### 3. **actor** ve **customer** tablolarında bulunan **first_name** sütunları için ilk tabloda bulunan ancak ikinci tabloda bulunmayan verileri sıralayalım. [(çözüme git)](Odevler/Odev11/3.sql "Tıklayarak 3. ödevi açabilirsin ")
+ * #### 4. İlk 3 sorguyu tekrar eden veriler için de yapalım. [(çözüme git)](Odevler/Odev11/4.sql "Tıklayarak 4. ödevi açabilirsin ")
