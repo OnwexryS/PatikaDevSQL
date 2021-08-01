@@ -83,3 +83,6 @@
  * #### 2. **film** tablosunda en yüksek rental_rate değerine sahip kaç tane film vardır? [(çözüme git)](Odevler/Odev12/2.sql "Tıklayarak 2. ödevi açabilirsin ")
  * #### 3. **film** tablosunda en düşük rental_rate ve en düşük replacement_cost değerlerine sahip filmleri sıralayınız. [(çözüme git)](Odevler/Odev12/3.sql "Tıklayarak 3. ödevi açabilirsin ")
  * #### 4. **payment** tablosunda en fazla sayıda alışveriş yapan müşterileri(customer) sıralayınız. [(çözüme git)](Odevler/Odev12/4.sql "Tıklayarak 4. ödevi açabilirsin ")
+
+
+ 
